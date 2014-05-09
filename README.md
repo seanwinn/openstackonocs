@@ -22,3 +22,11 @@ example 'nova boot --flavor m1.large --image precise-amd64 --key-name my_key --u
 
 The instance should build automatically and become available in approximately 5 minutes.  You can monitor the progress
 of the script in the log files which are accessible through the Horizon Dashboard.
+
+OpenStack Icehouse Support
+
+In order to launch an Icehouse version of OpenStack you must use Ubuntu 14.04 LTS (trusty)
+
+example:
+nova boot --flavor m1.large --image trusty-server-cloudimg-amd64 --key-name <keyname> --user-data icehouseonocs.sh icehouse-cloud
+
